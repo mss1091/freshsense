@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join the Waitlist — FreshSense</title>
+  <meta name="description" content="Be first to get FreshSense — the AI-powered food freshness monitor. Join the waitlist for early access, beta units, and exclusive pre-order pricing.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo"><span class="logo-dot"></span>FreshSense</a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="technology.html">Technology</a>
+        <a href="about.html">About</a>
+        <a href="waitlist.html" class="nav-cta active">Pre-order Now</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">Pre-order / Waitlist</span>
+      <h1>Join the Waitlist. Be First to <span class="text-gradient">Sense the Difference.</span></h1>
+      <p>Reserve your spot and be among the first households in the world to experience real-time food freshness monitoring. No payment required — just your interest.</p>
+    </div>
+  </section>
+
+  <!-- Waitlist Form -->
+  <section class="section" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="reveal" style="max-width:520px;margin:0 auto;">
+
+        <!-- Form -->
+        <div id="waitlistForm" class="info-card">
+          <h3 style="text-align:center;margin-bottom:24px;">Reserve Your FreshSense</h3>
+          <form id="signupForm" onsubmit="return handleSubmit(event)">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="country">Country</label>
+              <select id="country" name="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="TR">Türkiye</option>
+                <option value="US">United States</option>
+                <option value="GB">United Kingdom</option>
+                <option value="DE">Germany</option>
+                <option value="FR">France</option>
+                <option value="NL">Netherlands</option>
+                <option value="SE">Sweden</option>
+                <option value="NO">Norway</option>
+                <option value="DK">Denmark</option>
+                <option value="FI">Finland</option>
+                <option value="CH">Switzerland</option>
+                <option value="AT">Austria</option>
+                <option value="ES">Spain</option>
+                <option value="IT">Italy</option>
+                <option value="CA">Canada</option>
+                <option value="AU">Australia</option>
+                <option value="JP">Japan</option>
+                <option value="KR">South Korea</option>
+                <option value="SG">Singapore</option>
+                <option value="AE">United Arab Emirates</option>
+                <option value="SA">Saudi Arabia</option>
+                <option value="IN">India</option>
+                <option value="BR">Brazil</option>
+                <option value="MX">Mexico</option>
+                <option value="OTHER">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Which best describes you?</label>
+              <div class="radio-group">
+                <label class="radio-option">
+                  <input type="radio" name="userType" value="home" required>
+                  Home user — I want to reduce waste in my kitchen
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="userType" value="tech">
+                  Tech enthusiast — I love smart home IoT devices
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="userType" value="sustainability">
+                  Sustainability advocate — I care about food waste impact
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="userType" value="investor">
+                  Investor — I'm interested in the business opportunity
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;margin-top:8px;">Join the Waitlist</button>
+          </form>
+        </div>
+
+        <!-- Success Message -->
+        <div id="successMessage" class="success-message">
+          <div class="success-icon">✓</div>
+          <h2 style="margin-bottom:12px;">You're on the List!</h2>
+          <p style="font-size:1.1rem;color:var(--text-secondary);max-width:400px;margin:0 auto;">Thank you for your interest in FreshSense. We'll be in touch with updates on beta access, pre-order availability, and launch timeline.</p>
+          <div class="mt-40">
+            <a href="index.html" class="btn btn-secondary">← Back to Home</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- What to Expect Timeline -->
+  <section class="section" id="timeline">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Roadmap</span>
+        <h2>What to <span class="text-gradient">Expect</span></h2>
+      </div>
+      <div class="h-timeline reveal">
+        <div class="h-timeline-item">
+          <div class="timeline-date">Q2 2026</div>
+          <div class="h-timeline-dot"></div>
+          <h4>Beta Units Shipped</h4>
+          <p>First batch of beta hardware ships to waitlist members for real-world testing and feedback.</p>
+        </div>
+        <div class="h-timeline-item">
+          <div class="timeline-date">Q3 2026</div>
+          <div class="h-timeline-dot"></div>
+          <h4>Public Pre-order</h4>
+          <p>Pre-orders open to the general public with confirmed pricing and delivery estimates.</p>
+        </div>
+        <div class="h-timeline-item">
+          <div class="timeline-date">Q4 2026</div>
+          <div class="h-timeline-dot"></div>
+          <h4>Mass Production</h4>
+          <p>Manufacturing scales up with our production partners for volume shipments worldwide.</p>
+        </div>
+        <div class="h-timeline-item">
+          <div class="timeline-date">Q1 2027</div>
+          <div class="h-timeline-dot"></div>
+          <h4>Global Retail Launch</h4>
+          <p>FreshSense hits retail channels — online and in-store — across multiple regions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Crowdfunding Teaser -->
+  <section class="section-sm" style="background:var(--bg-secondary);border-top:1px solid var(--border);">
+    <div class="container">
+      <div class="callout-block reveal" style="max-width:680px;margin:0 auto;">
+        <span class="section-label" style="margin-bottom:20px;display:block;">🚀 Crowdfunding Coming Soon</span>
+        <h3>We're Planning a Kickstarter Campaign</h3>
+        <p style="margin:12px auto 0;max-width:540px;">Early backers will get exclusive early-bird pricing, limited-edition hardware colors, and premium subscription perks. Sign up above to get notified when we launch.</p>
+        <div class="mt-20">
+          <a href="#" onclick="document.getElementById('name').focus();window.scrollTo({top:0,behavior:'smooth'});return false;" class="btn btn-primary">Notify Me on Launch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Press Contact -->
+  <section class="section-sm" id="press">
+    <div class="container text-center reveal">
+      <span class="section-label">Press & Media</span>
+      <h3 style="margin-top:16px;margin-bottom:12px;">Media Inquiries</h3>
+      <p>For press kits, interviews, demos, and partnership inquiries, reach out to our media team.</p>
+      <div class="mt-20">
+        <a href="mailto:media@freshsense.io" class="btn btn-secondary">
+          📧 media@freshsense.io
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container reveal">
+      <h2>The Future of Food Freshness <span class="text-gradient">Starts Here</span></h2>
+      <p style="max-width:500px;margin:0 auto 32px;">Don't rely on printed dates. Sense the real chemistry.</p>
+      <a href="https://youtu.be/FWKUDwyPlBI" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">Watch the Demo ▶</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo"><span class="logo-dot"></span>FreshSense</a>
+          <p>Stop Guessing. Start Sensing.<br>The Chemical Guardian of Your Kitchen.</p>
+          <div class="footer-socials">
+            <a href="https://github.com/mss1091/freshsense" target="_blank" rel="noopener" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+            <a href="https://www.linkedin.com/in/mssever" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a href="https://youtu.be/FWKUDwyPlBI" target="_blank" rel="noopener" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Product</h4><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="technology.html">Technology</a><a href="how-it-works.html">How It Works</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="about.html">About Us</a><a href="about.html#team">Team</a><a href="about.html#partners">Partners</a></div>
+        <div class="footer-col"><h4>Get Started</h4><a href="waitlist.html">Join Waitlist</a><a href="pricing.html">Pre-order</a><a href="https://youtu.be/FWKUDwyPlBI" target="_blank" rel="noopener">Watch Demo</a></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 FreshSense — Ring of Fire, Istanbul Technical University</p>
+        <p class="mono" style="font-size:0.7rem;color:var(--text-dim);">Built with 🧪 and ❤️</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 50));
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    const navOverlay = document.getElementById('navOverlay');
+    navToggle.addEventListener('click', () => { navToggle.classList.toggle('open'); navLinks.classList.toggle('open'); navOverlay.classList.toggle('active'); });
+    navOverlay.addEventListener('click', () => { navToggle.classList.remove('open'); navLinks.classList.remove('open'); navOverlay.classList.remove('active'); });
+
+    // Reveal
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // Form Submit
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('waitlistForm').style.display = 'none';
+      const success = document.getElementById('successMessage');
+      success.classList.add('show');
+      return false;
+    }
+  </script>
+
+</body>
+</html>

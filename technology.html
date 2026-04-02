@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technology — FreshSense</title>
+  <meta name="description" content="Explore the science behind FreshSense: MOS VOC sensor technology, Random Forest + LSTM hybrid ML models, hardware specs, data privacy, and worldwide novelty.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo"><span class="logo-dot"></span>FreshSense</a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="technology.html" class="active">Technology</a>
+        <a href="about.html">About</a>
+        <a href="waitlist.html" class="nav-cta">Pre-order Now</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">Technology</span>
+      <h1>Built on <span class="text-gradient">Real Science</span></h1>
+      <p>FreshSense isn't a gimmick — it's a scientifically grounded system built on proven VOC detection chemistry, validated machine learning models, and production-grade embedded hardware.</p>
+    </div>
+  </section>
+
+  <!-- Science of VOC Detection -->
+  <section class="section" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">The Science</span>
+        <h2>How Food <span class="text-gradient">Talks to Our Sensors</span></h2>
+        <p>Every food item emits a unique cocktail of volatile organic compounds (VOCs) as it decays. FreshSense listens to this chemical conversation.</p>
+      </div>
+
+      <div class="science-grid">
+        <div class="info-card reveal">
+          <h3>🧬 What Are VOCs?</h3>
+          <p>Volatile Organic Compounds are airborne molecules released during the natural metabolic processes of food degradation. As bacteria break down proteins, carbohydrates, and fats, they release signature gases that are invisible to the human eye but measurable by electronic sensors — long before you can smell anything off.</p>
+          <div class="mt-20">
+            <h4 class="mono text-accent" style="font-size:0.7rem;letter-spacing:0.1em;margin-bottom:12px;">KEY SPOILAGE MARKERS</h4>
+            <div class="spec-grid" style="grid-template-columns:1fr;">
+              <div class="spec-item"><span class="spec-label">Ethylene (C₂H₄)</span><span class="spec-value">Fruit ripening &amp; over-ripening</span></div>
+              <div class="spec-item"><span class="spec-label">Ammonia (NH₃)</span><span class="spec-value">Protein/amino acid breakdown</span></div>
+              <div class="spec-item"><span class="spec-label">Hydrogen Sulfide (H₂S)</span><span class="spec-value">Egg &amp; meat decomposition</span></div>
+              <div class="spec-item"><span class="spec-label">Carbon Dioxide (CO₂)</span><span class="spec-value">General metabolic decay</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card reveal reveal-delay-2">
+          <h3>📡 MOS Sensor Technology</h3>
+          <p>Metal-Oxide Semiconductor (MOS) gas sensors work by measuring changes in electrical resistance when target gas molecules adsorb onto a heated metal-oxide surface. Different MOS materials exhibit selective sensitivity to different gas families, enabling our multi-sensor array to create a distinct chemical "fingerprint" for each decay stage.</p>
+          <div class="mt-20">
+            <h4 class="mono text-accent" style="font-size:0.7rem;letter-spacing:0.1em;margin-bottom:12px;">WHY THIS BEATS EXPIRY DATES</h4>
+            <p>Printed expiry dates are static estimates based on average conditions. They don't account for your actual storage temperature, humidity, or the specific batch of food you bought. MOS gas detection measures the <strong style="color:var(--text-primary);">actual biochemical state</strong> of food in real time — giving you ground truth instead of a guess.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ML Model Explainer -->
+  <section class="section" id="ml">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Machine Learning</span>
+        <h2>The <span class="text-gradient">AI Brain</span> Behind the Sensing</h2>
+        <p>Raw gas data isn't useful until it's interpreted. Our hybrid ML architecture turns ppm readings into actionable freshness intelligence.</p>
+      </div>
+
+      <div class="science-grid">
+        <div class="info-card reveal">
+          <h3>🌳 Random Forest Classifier</h3>
+          <p>An ensemble decision-tree model trained on thousands of labeled multi-gas samples from controlled spoilage experiments. It excels at <strong style="color:var(--text-primary);">pattern classification</strong> — recognizing that a specific combination of ethylene at 12 ppm + ammonia at 3 ppm means "Caution" for chicken breast, but "Fresh" for aged cheese.</p>
+          <div class="mt-20" style="padding:16px;background:rgba(0,230,118,0.04);border-radius:8px;border:1px solid var(--border);">
+            <h4 class="mono" style="font-size:0.7rem;color:var(--accent-primary);margin-bottom:8px;">OUTPUT</h4>
+            <p style="font-size:0.9rem;">Multi-class classification → <span class="text-accent">Fresh</span> · <span style="color:#f59e0b;">Caution</span> · <span style="color:#ef4444;">Spoiled</span></p>
+          </div>
+        </div>
+
+        <div class="info-card reveal reveal-delay-2">
+          <h3>🔄 LSTM Neural Network</h3>
+          <p>A Long Short-Term Memory recurrent neural network that captures <strong style="color:var(--text-primary);">temporal patterns</strong> in gas concentration changes over time. While the Random Forest classifies the current state, the LSTM looks at <em>how fast</em> gases are changing — enabling it to predict <strong style="color:var(--text-primary);">hours remaining until spoilage</strong>.</p>
+          <div class="mt-20" style="padding:16px;background:rgba(0,188,212,0.04);border-radius:8px;border:1px solid rgba(0,188,212,0.15);">
+            <h4 class="mono" style="font-size:0.7rem;color:var(--accent-secondary);margin-bottom:8px;">OUTPUT</h4>
+            <p style="font-size:0.9rem;">Temporal regression → <span class="text-cyan">Hours remaining until spoilage</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card reveal mt-40" style="max-width:700px;margin-left:auto;margin-right:auto;text-align:center;">
+        <h4 style="margin-bottom:12px;">Training Data Pipeline</h4>
+        <p>Our models are trained on data collected from controlled spoilage experiments conducted across dozens of food types. Each experiment records gas concentration time series from the moment food is placed in a controlled fridge environment until it reaches full spoilage — labeled by food scientists at each stage. This dataset grows continuously as deployed units contribute anonymized readings.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hardware Specs -->
+  <section class="section" style="background:var(--bg-secondary);" id="specs">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Hardware</span>
+        <h2>Technical <span class="text-gradient">Specifications</span></h2>
+      </div>
+      <div class="info-card reveal" style="max-width:800px;margin:0 auto;">
+        <div class="spec-grid">
+          <div class="spec-item"><span class="spec-label">Microcontroller</span><span class="spec-value">ESP32-WROOM-32</span></div>
+          <div class="spec-item"><span class="spec-label">Sensor Type</span><span class="spec-value">MOS VOC Gas Sensor Array</span></div>
+          <div class="spec-item"><span class="spec-label">Gases Detected</span><span class="spec-value">C₂H₄, NH₃, H₂S, CO₂</span></div>
+          <div class="spec-item"><span class="spec-label">Sensor Partner</span><span class="spec-value">Sensirion AG modules</span></div>
+          <div class="spec-item"><span class="spec-label">Connectivity</span><span class="spec-value">Wi-Fi 802.11 b/g/n</span></div>
+          <div class="spec-item"><span class="spec-label">Power Options</span><span class="spec-value">USB-C / Rechargeable Battery</span></div>
+          <div class="spec-item"><span class="spec-label">Operating Temp</span><span class="spec-value">0°C – 8°C (fridge range)</span></div>
+          <div class="spec-item"><span class="spec-label">Dimensions</span><span class="spec-value">~ 80 × 50 × 25 mm</span></div>
+          <div class="spec-item"><span class="spec-label">Weight</span><span class="spec-value">~ 65g</span></div>
+          <div class="spec-item"><span class="spec-label">Sampling Interval</span><span class="spec-value">Every 3–5 minutes</span></div>
+          <div class="spec-item"><span class="spec-label">Data Security</span><span class="spec-value">End-to-end encryption (TLS)</span></div>
+          <div class="spec-item"><span class="spec-label">Cloud Backend</span><span class="spec-value">AWS / Google Cloud</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Privacy -->
+  <section class="section" id="privacy">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Privacy</span>
+        <h2>Your Food Data <span class="text-gradient">Stays Yours</span></h2>
+      </div>
+      <div class="grid-3">
+        <div class="card reveal reveal-delay-1">
+          <div class="card-icon">🔒</div>
+          <h3>End-to-End Encryption</h3>
+          <p>All sensor data is encrypted during transmission using TLS. No one — not even us — can intercept your readings in transit. Data at rest is encrypted on our cloud servers.</p>
+        </div>
+        <div class="card reveal reveal-delay-2">
+          <div class="card-icon">🚫</div>
+          <h3>We Never Sell Data</h3>
+          <p>FreshSense will never sell, share, or monetize your food data to third parties. Your dietary patterns are private and will remain so. Full stop.</p>
+        </div>
+        <div class="card reveal reveal-delay-3">
+          <div class="card-icon">🇪🇺</div>
+          <h3>GDPR-Aligned Design</h3>
+          <p>Our system is designed with GDPR principles in mind — data minimization, user control, right to deletion, and transparency. You can request a full export or deletion of your data at any time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research & Scouting -->
+  <section class="section" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="callout-block reveal">
+        <span class="section-label" style="margin-bottom:20px;display:block;">🔬 Research & IP Scouting</span>
+        <h3>Validated Novelty. Confirmed Market Gap.</h3>
+        <p style="max-width:700px;margin:16px auto 0;">Extensive patent scouting through WIPO and Google Patents databases confirms no existing commercial product combines multi-gas VOC chemical sensing with ML-based freshness prediction in a consumer-grade retrofit device. Academic literature on IEEE Xplore validates the scientific approach, while commercial scouting confirms we occupy a unique market position. FreshSense holds <strong style="color:var(--text-primary);">Worldwide Novelty</strong> classification with a clear patent filing opportunity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container reveal">
+      <h2>Science That <span class="text-gradient">Serves Your Kitchen</span></h2>
+      <p style="max-width:500px;margin:0 auto 32px;">Experience the technology that's changing how the world thinks about food freshness.</p>
+      <a href="waitlist.html" class="btn btn-primary btn-lg">Join the Waitlist</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo"><span class="logo-dot"></span>FreshSense</a>
+          <p>Stop Guessing. Start Sensing.<br>The Chemical Guardian of Your Kitchen.</p>
+          <div class="footer-socials">
+            <a href="https://github.com/mss1091/freshsense" target="_blank" rel="noopener" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+            <a href="https://www.linkedin.com/in/mssever" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a href="https://youtu.be/FWKUDwyPlBI" target="_blank" rel="noopener" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Product</h4><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="technology.html">Technology</a><a href="how-it-works.html">How It Works</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="about.html">About Us</a><a href="about.html#team">Team</a><a href="about.html#partners">Partners</a></div>
+        <div class="footer-col"><h4>Get Started</h4><a href="waitlist.html">Join Waitlist</a><a href="pricing.html">Pre-order</a><a href="https://youtu.be/FWKUDwyPlBI" target="_blank" rel="noopener">Watch Demo</a></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 FreshSense — Ring of Fire, Istanbul Technical University</p>
+        <p class="mono" style="font-size:0.7rem;color:var(--text-dim);">Built with 🧪 and ❤️</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 50));
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    const navOverlay = document.getElementById('navOverlay');
+    navToggle.addEventListener('click', () => { navToggle.classList.toggle('open'); navLinks.classList.toggle('open'); navOverlay.classList.toggle('active'); });
+    navOverlay.addEventListener('click', () => { navToggle.classList.remove('open'); navLinks.classList.remove('open'); navOverlay.classList.remove('active'); });
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    revealElements.forEach(el => revealObserver.observe(el));
+  </script>
+
+</body>
+</html>
